@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingfoiling Events & Clinics in Toronto | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-500 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="community.html" class="text-gray-500 hover:text-blue-600 font-medium">Community</a>
+                    <a href="events.html" class="text-gray-900 hover:text-blue-600 font-medium">Events</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Lessons</a>
+                    <a href="community.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Community</a>
+                    <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Events</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 sm:py-32">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Toronto Wingfoiling Events & Clinics</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Join us for exciting events, demo days, and skill-enhancing clinics throughout the season.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Introduction -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Get Involved in the Toronto Wingfoil Scene</h2>
+                        <p class="text-gray-600 mb-4">
+                            At TorontoWingfoil, we're passionate about building a vibrant local wingfoiling community. Beyond our regular <a href="lessons.html" class="text-blue-600 hover:text-blue-800">lessons</a>, we aim to host and promote a variety of events and clinics designed to bring foilers together, help you improve your skills, try out new gear, and simply have fun on the water.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            Our events cater to all levels, from those new to the sport looking to connect, to advanced riders wanting to push their boundaries. Keep an eye on this page and subscribe to our newsletter for the latest updates on what's happening!
+                        </p>
+
+                        <div class="bg-gray-50 p-8 rounded-xl mb-12 border border-gray-200">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Upcoming Events & Clinics</h3>
+                            <p class="text-gray-700 text-center mb-4">
+                                We are busy planning our event schedule for the upcoming season! Please check back soon for specific dates and details.
+                            </p>
+                            <p class="text-gray-700 text-center">
+                                To be the first to know, <a href="contact.html" class="text-blue-600 hover:text-blue-800">sign up for our newsletter</a> or follow us on social media (links coming soon!).
+                            </p>
+                            <!-- Placeholder for event listings if available later -->
+                            <!-- 
+                            <div class="mt-6 space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow">Event 1 - Date - Details</div>
+                                <div class="bg-white p-4 rounded-lg shadow">Event 2 - Date - Details</div>
+                            </div>
+                            -->
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Types of Events We Host & Support</h2>
+                        <p class="text-gray-600 mb-8">
+                            Here's a taste of what you can expect from TorontoWingfoil events and our involvement in the local scene:
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-8 mb-12">
+                            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.37 3.414-1.415 3.414H4.829c-1.785 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Gear Demo Days</h3>
+                                <p class="text-gray-600">Curious about the latest wings, boards, or foils? We plan to partner with leading brands to host demo days where you can try out new equipment under expert supervision. A great way to find your next favorite piece of gear!</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Fun Races & Slalom Sessions</h3>
+                                <p class="text-gray-600">For those with a bit of a competitive spirit! We'll organize informal, fun races and slalom courses suitable for various skill levels. It's all about friendly competition and improving your maneuvering skills.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                                <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Social Gatherings & BBQs</h3>
+                                <p class="text-gray-600">Wingfoiling is as much about the community as it is about the sport. We'll host casual beach BBQs, post-session get-togethers, and other social events to help you connect with fellow foilers off the water.</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                                 <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-3">Skill-Specific Clinics</h3>
+                                <p class="text-gray-600">Looking to master a specific technique? We'll offer specialized clinics focusing on areas like foiling tacks and jibes, jumping, wave riding (where conditions permit), or light wind techniques. These will often be led by our senior instructors or guest coaches. Connect this with our <a href="advanced-lesson.html" class="text-blue-600 hover:text-blue-800">Advanced Lessons</a>.</p>
+                            </div>
+                        </div>
+                        
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Past Event Highlights (Examples)</h2>
+                        <p class="text-gray-600 mb-8">To give you an idea, here are some fictional examples of events we aspire to host:</p>
+                         <div class="space-y-6">
+                            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">"Spring Wing Fling" - Season Kick-off</h3>
+                                <p class="text-sm text-gray-500 mb-2">Date: Early May (Past Event Example)</p>
+                                <p class="text-gray-600">A fun-filled day to kick off the wingfoiling season in Toronto! Included gear demos from top brands, free mini-clinics on wing handling, a friendly "first to foil" challenge, and a community BBQ at Cherry Beach. Great turnout and perfect winds!</p>
+                            </div>
+                             <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">"Sunset Foil & Social" - Mid-Summer Meetup</h3>
+                                <p class="text-sm text-gray-500 mb-2">Date: Late July (Past Event Example)</p>
+                                <p class="text-gray-600">An evening session at Woodbine Beach enjoying the summer sunset on the foil, followed by a casual social gathering. All levels welcome, focused on enjoying the conditions and camaraderie. We shared tips, stories, and planned future adventures.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 bg-teal-50 p-8 rounded-xl border border-teal-100">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Want to Get Involved or Suggest an Event?</h3>
+                            <p class="text-gray-600 mb-6">We're always open to ideas and collaborations! If you have an idea for a wingfoiling event in Toronto, or if your company is interested in sponsoring or partnering with us, please <a href="contact.html" class="text-blue-600 hover:text-blue-800">get in touch</a>. We'd love to hear from you!</p>
+                            <a href="contact.html" class="bg-teal-600 text-white hover:bg-teal-700 px-6 py-3 rounded-lg font-medium inline-block">Contact Us About Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-blue-600 text-white py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Don't Miss Out!</h2>
+                    <p class="text-lg mb-8 opacity-90">Stay informed about all our upcoming wingfoiling events, clinics, and community news in Toronto.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html#newsletter" class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium text-lg inline-block">Subscribe to Newsletter</a>
+                        <a href="community.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg font-medium text-lg inline-block">Join Our Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TorontoWingfoil</div>
+                    <p class="text-gray-400">Experience the thrill of wingfoiling in Toronto with professional instruction and a structured learning approach.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="lessons.html" class="text-gray-400 hover:text-white">Lessons</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="gear.html" class="text-gray-400 hover:text-white">Gear Information</a></li>
+                        <li><a href="locations.html" class="text-gray-400 hover:text-white">Locations</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="safety.html" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="community.html" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Toronto, Ontario</li>
+                        <li>Email: info@torontowingfoil.com</li>
+                        <li>Phone: (647) 555-1234</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TorontoWingfoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

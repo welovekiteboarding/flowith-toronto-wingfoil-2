@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Lesson | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-900 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="community.html" class="text-gray-500 hover:text-blue-600 font-medium">Community</a>
+                    <a href="events.html" class="text-gray-500 hover:text-blue-600 font-medium">Events</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Lessons</a>
+                    <a href="community.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Community</a>
+                    <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Events</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 sm:py-32">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <div class="flex items-center mb-4">
+                        <a href="lessons.html" class="text-blue-200 hover:text-white inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                            </svg>
+                            Back to Lessons
+                        </a>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Discovery Lesson</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Your first step into the exciting world of wingfoiling in Toronto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson Content -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-12">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                                <div>
+                                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Discovery Lesson (Level 1)</h2>
+                                    <p class="text-gray-600 mb-4 md:mb-0">Perfect for first-time wingfoilers with no prior experience</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="text-3xl font-bold text-blue-600">$150</div>
+                                    <div class="ml-2 text-gray-500">per person</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">What to Expect in Your First Lesson</h2>
+                        <p class="text-gray-600 mb-4">
+                            Our Discovery Lesson is designed for first-time wingfoilers with no prior experience. This 2-hour session introduces you to the fundamentals of wingfoiling in a safe, controlled environment. You'll learn the basics of wing handling, board control, and <a href="safety.html" class="text-blue-600 hover:text-blue-800">safety protocols</a> that will form the foundation for your wingfoiling journey. We begin with theory and land-based practice, focusing on understanding wind principles and controlling the wing. We then move to shallow water to practice body dragging and getting comfortable with the board before attempting to stand and move with the wing and board together.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            In Toronto, we often utilize <a href="locations.html" class="text-blue-600 hover:text-blue-800">locations</a> like Cherry Beach or Woodbine Beach for Discovery Lessons, as these spots can offer shallow, calm water areas depending on wind direction. This makes it easier to stand, manage the equipment, and practice without the challenge of deep water or significant waves. Your instructor will be with you every step of the way, ensuring you feel comfortable and confident. We use beginner-friendly <a href="gear.html" class="text-blue-600 hover:text-blue-800">equipment</a>, often starting with a large, stable board without the foil attached.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Lesson Structure</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Introduction & Safety Briefing (30 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Welcome and overview of wingfoiling as a sport</li>
+                                <li>Detailed introduction to equipment: wing, board (without foil initially for safety), leash, PFD, helmet</li>
+                                <li>Comprehensive safety protocols: understanding wind, water conditions, potential hazards, and self-rescue basics</li>
+                                <li>Weather and water conditions assessment for the specific Toronto location</li>
+                                <li>Basic terminology and communication signals used during the lesson</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Wing Handling on Land (20 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Proper wing holding technique and setup (inflation, leash attachment)</li>
+                                <li>Wing control and manipulation: sheeting in/out, steering, flipping the wing</li>
+                                <li>Understanding wind direction, the "wind window," and power zones</li>
+                                <li>Simulating sailing maneuvers on land to get a feel for the wing's power</li>
+                                <li>Practicing emergency depower of the wing</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Water Practice - Shallow Water Focus (60 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Entering the water safely with equipment (wing and board)</li>
+                                <li>Practicing body dragging with the wing: using the wing to pull you through the water without the board</li>
+                                <li>Learning to get on the board (large, stable beginner board) while controlling the wing in shallow water</li>
+                                <li>Developing basic board balance and body positioning (kneeling, then standing)</li>
+                                <li>First attempts at moving a short distance on the board using wing power</li>
+                                <li>Recovery techniques if you fall off the board or lose the wing</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Debrief & Next Steps (10 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600">
+                                <li>Review of skills learned and progress made during the session</li>
+                                <li>Personalized feedback, tips for improvement, and what to practice</li>
+                                <li>Discussion of next steps: moving to the Beginner Lesson to work towards foiling</li>
+                                <li>Recommendations for future lessons and how to continue your wingfoiling journey</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Skills You'll Learn</h3>
+                        <ul class="grid md:grid-cols-2 gap-4 mb-8">
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Proper wing handling and control techniques (on land and water)</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Understanding wind direction, power zones, and basic aerodynamics</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Basic board balance, positioning, and getting onto the board</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Essential water safety, self-rescue techniques, and hazard awareness</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Body dragging with the wing for board recovery and control</span>
+                            </li>
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">Basic equipment care, setup, and handling</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">What's Included</h3>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>All necessary equipment (beginner-friendly wing, large stable board, leash, helmet)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Wetsuit and personal flotation device (PFD) / Impact Vest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Professional instruction with experienced and certified coach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Comprehensive safety briefing and ongoing supervision</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">What to Bring for Your Lesson</h3>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Swimsuit (to wear under the wetsuit)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Towel</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Waterproof Sunscreen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Water bottle (stay hydrated!)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>Sunglasses (optional, with a retainer strap)</span>
+                            </li>
+                             <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span>A positive attitude and willingness to learn something new and exciting!</span>
+                            </li>
+                        </ul>
+
+                        <div class="bg-gray-50 p-8 rounded-xl mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Next Steps After This Lesson</h3>
+                            <p class="text-gray-600 mb-4">
+                                After completing the Discovery Lesson, most students progress to the <a href="beginner-lesson.html" class="text-blue-600 hover:text-blue-800">Beginner Lesson</a> where you'll build on these foundations, focus on water starts, and work toward your first flights on the foil. Some students may benefit from a second Discovery Lesson to further solidify the fundamentals of wing and board control before moving to the next level. Your instructor will provide personalized advice based on your progress.
+                            </p>
+                            <a href="beginner-lesson.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                                Learn about the Beginner Lesson
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="bg-blue-600 text-white p-8 rounded-xl">
+                            <h3 class="text-2xl font-bold mb-4">Ready to Book Your Discovery Lesson?</h3>
+                            <p class="mb-6 opacity-90">
+                                Take your first step into the exciting world of wingfoiling. Our Discovery Lesson is the perfect introduction to this rapidly growing water sport, designed to be fun, safe, and effective.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="contact.html" class="bg-white text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-lg font-medium inline-block text-center">Book Now</a>
+                                <a href="pricing.html" class="bg-transparent border border-white hover:bg-white hover:text-blue-600 px-6 py-2 rounded-lg font-medium inline-block text-center">View All Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TorontoWingfoil</div>
+                    <p class="text-gray-400">Experience the thrill of wingfoiling in Toronto with professional instruction and a structured learning approach.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="lessons.html" class="text-gray-400 hover:text-white">Lessons</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="gear.html" class="text-gray-400 hover:text-white">Gear Information</a></li>
+                        <li><a href="locations.html" class="text-gray-400 hover:text-white">Locations</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="safety.html" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="community.html" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Toronto, Ontario</li>
+                        <li>Email: info@torontowingfoil.com</li>
+                        <li>Phone: (647) 555-1234</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TorontoWingfoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

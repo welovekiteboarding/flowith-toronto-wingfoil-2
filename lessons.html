@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingfoiling Lessons in Toronto | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-900 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="community.html" class="text-gray-500 hover:text-blue-600 font-medium">Community</a>
+                    <a href="events.html" class="text-gray-500 hover:text-blue-600 font-medium">Events</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Lessons</a>
+                    <a href="community.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Community</a>
+                    <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Events</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 sm:py-32">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Wingfoiling Lessons</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Structured lessons for all skill levels in Toronto. Learn to wingfoil with expert guidance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons Introduction -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Your Path to Wingfoiling Mastery</h2>
+                        <p class="text-gray-600 mb-8">
+                            At TorontoWingfoil, we offer a comprehensive lesson program designed to take you from complete beginner to confident independent wingfoiler. Our lessons are structured to build skills progressively, ensuring you learn safely and effectively. All lessons include equipment (wing, board, foil, wetsuit, helmet, PFD). Our experienced instructors tailor each session to your abilities and Toronto's current conditions.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            We cater to all levels:
+                            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-600">
+                                <li><strong>First-Timers:</strong> Our Discovery Lesson is the perfect starting point.</li>
+                                <li><strong>Beginners:</strong> Progress to foiling with our Beginner Lesson.</li>
+                                <li><strong>Intermediates:</strong> Refine your skills and learn transitions in our Intermediate Lesson.</li>
+                                <li><strong>Advanced Riders:</strong> Push your limits with specialized coaching in our Advanced Lesson, covering techniques like advanced tacks, jibes, and potentially jumps or wave riding basics if conditions allow.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson Cards Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Discovery Lesson Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <div class="mb-2">
+                                <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">LEVEL 1</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Discovery Lesson</h3>
+                            <p class="text-gray-600 text-sm mb-4">Your first introduction to wingfoiling. Learn wing handling, board basics, and safety in shallow water. No experience needed!</p>
+                            <div class="text-2xl font-bold text-blue-600 mb-4">$150 <span class="text-sm font-normal text-gray-500">/ 2 hours</span></div>
+                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Wing control on land</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Board balance</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Safety protocols</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="discovery-lesson.html" class="block w-full bg-blue-600 text-white text-center hover:bg-blue-700 px-4 py-2 rounded-lg font-medium">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Beginner Lesson Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <div class="mb-2">
+                                <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">LEVEL 2</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Beginner Lesson</h3>
+                            <p class="text-gray-600 text-sm mb-4">Progress to foiling! Focus on water starts, board speed, and experience your first flights on the hydrofoil.</p>
+                             <div class="text-2xl font-bold text-blue-600 mb-4">$150 <span class="text-sm font-normal text-gray-500">/ 2 hours</span></div>
+                            <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Water starts</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>First foil flights</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Foil control basics</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                             <a href="beginner-lesson.html" class="block w-full bg-blue-600 text-white text-center hover:bg-blue-700 px-4 py-2 rounded-lg font-medium">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate Lesson Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <div class="mb-2">
+                                <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">LEVEL 3</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Intermediate Lesson</h3>
+                            <p class="text-gray-600 text-sm mb-4">Refine your foiling skills. Achieve longer flights, better height control, and start learning basic transitions like turns.</p>
+                            <div class="text-2xl font-bold text-blue-600 mb-4">$165 <span class="text-sm font-normal text-gray-500">/ 2 hours</span></div>
+                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Sustained foiling</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Height control</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Basic transitions</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="intermediate-lesson.html" class="block w-full bg-blue-600 text-white text-center hover:bg-blue-700 px-4 py-2 rounded-lg font-medium">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Advanced Lesson Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-6 flex-grow">
+                            <div class="mb-2">
+                                <span class="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">LEVEL 4</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Lesson</h3>
+                            <p class="text-gray-600 text-sm mb-4">Push your limits! Master advanced maneuvers such as foiling tacks & jibes, toeside riding, and explore basic jumps or wave riding techniques.</p>
+                            <div class="text-2xl font-bold text-blue-600 mb-4">$180 <span class="text-sm font-normal text-gray-500">/ 2 hours</span></div>
+                             <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Foiling tacks & jibes</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Advanced maneuvers</li>
+                                <li class="flex items-center"><svg class="h-4 w-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>Personalized coaching</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="advanced-lesson.html" class="block w-full bg-blue-600 text-white text-center hover:bg-blue-700 px-4 py-2 rounded-lg font-medium">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="pricing.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                        View All Pricing Options
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Why Choose TorontoWingfoil for Your Lessons?</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Expert, Certified Instructors</h3>
+                            <p class="text-gray-600">Our team consists of passionate and experienced wingfoilers who are certified instructors. They provide patient, clear, and personalized coaching to help you progress quickly and safely.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Safety First Approach</h3>
+                            <p class="text-gray-600">Your safety is our top priority. All lessons include comprehensive safety briefings, use of safety gear (helmet, PFD), and instruction in carefully chosen, safe locations in Toronto. More on our <a href="safety.html" class="text-blue-600 hover:text-blue-800">Safety Page</a>.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Quality, Beginner-Friendly Gear</h3>
+                            <p class="text-gray-600">We use modern, well-maintained equipment specifically chosen for its stability and ease of use, ideal for learning in Toronto's conditions. All gear is included. See our <a href="gear.html" class="text-blue-600 hover:text-blue-800">Gear Page</a>.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-900">Prime Toronto Locations</h3>
+                            <p class="text-gray-600">We utilize the best wingfoiling spots Toronto has to offer, selected daily based on wind and weather to provide optimal learning conditions. Details on our <a href="locations.html" class="text-blue-600 hover:text-blue-800">Locations Page</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-blue-600 text-white py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Start Your Wingfoiling Adventure?</h2>
+                    <p class="text-lg mb-8 opacity-90">Book your lesson today and experience the incredible sensation of flying above the water on Lake Ontario!</p>
+                    <a href="contact.html" class="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-medium text-lg inline-block">Book Your Lesson Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TorontoWingfoil</div>
+                    <p class="text-gray-400">Experience the thrill of wingfoiling in Toronto with professional instruction and a structured learning approach.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="lessons.html" class="text-gray-400 hover:text-white">Lessons</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="gear.html" class="text-gray-400 hover:text-white">Gear Information</a></li>
+                        <li><a href="locations.html" class="text-gray-400 hover:text-white">Locations</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="safety.html" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="community.html" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Toronto, Ontario</li>
+                        <li>Email: info@torontowingfoil.com</li>
+                        <li>Phone: (647) 555-1234</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TorontoWingfoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

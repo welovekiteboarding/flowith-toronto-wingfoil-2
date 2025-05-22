@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Lesson | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-900 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="community.html" class="text-gray-500 hover:text-blue-600 font-medium">Community</a>
+                    <a href="events.html" class="text-gray-500 hover:text-blue-600 font-medium">Events</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Lessons</a>
+                    <a href="community.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Community</a>
+                    <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Events</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-600 text-white py-12 sm:py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                     <div class="flex items-center mb-4">
+                        <a href="lessons.html" class="text-blue-200 hover:text-white inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                            </svg>
+                            Back to Lessons
+                        </a>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Intermediate Lesson</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Refine your foiling: sustained flights, height control, and basic transitions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson Content -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-12">
+                            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                                <div>
+                                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Intermediate Lesson (Level 3)</h2>
+                                    <p class="text-gray-600 mb-4 md:mb-0">For those consistently foiling and ready to improve control and learn turns.</p>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="text-3xl font-bold text-blue-600">$165</div>
+                                    <div class="ml-2 text-gray-500">per person</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">What to Expect in Your Intermediate Lesson</h2>
+                        <p class="text-gray-600 mb-4">
+                            The Intermediate Lesson is for wingfoilers who have successfully completed our Beginner Lesson (or have equivalent experience) and are achieving consistent short flights on the foil. This 2-hour session focuses on refining your technique for longer, more controlled foiling rides, improving your ability to manage height, and introducing basic transitions such as carving turns (both on and off the foil) and the initial steps towards foiling tacks and jibes.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            On Lake Ontario, intermediate skills allow you to handle more varied conditions with confidence. You'll learn to adapt your stance and foil control to manage small chop, maintain speed through lulls, and start to link maneuvers. We'll continue to emphasize <a href="safety.html" class="text-blue-600 hover:text-blue-800">safety</a> and may introduce slightly more responsive <a href="gear.html" class="text-blue-600 hover:text-blue-800">equipment</a> if appropriate for your progress.
+                        </p>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Lesson Structure</h3>
+                        <div class="mb-8">
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Skill Review & Goal Setting (20 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Brief review of current foiling ability (water starts, short flights, basic control).</li>
+                                <li>Discussion of specific goals for the session (e.g., longer flights, consistent height, starting turns).</li>
+                                <li>Introduction to the theory and mechanics of basic transitions.</li>
+                                <li>Advanced safety review related to transitions and longer rides.</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Sustained Foiling & Height Control (40 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Techniques for achieving longer, more stable flights on the foil.</li>
+                                <li>Practicing consistent height control (avoiding porpoising or breaching).</li>
+                                <li>Drills for fore-aft and lateral balance adjustments while foiling.</li>
+                                <li>Improving upwind and downwind riding angles on the foil.</li>
+                                <li>Pumping techniques to maintain foil lift in lighter winds or lulls.</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Introduction to Transitions (50 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                                <li>Learning to initiate carving turns (both heel-side and toe-side) while on the foil.</li>
+                                <li>Practicing "touch-down" turns (coming off foil, turning, and re-launching).</li>
+                                <li>Introduction to footwork and wing handling for foiling tacks (upwind turns on foil).</li>
+                                <li>Introduction to footwork and wing handling for foiling jibes (downwind turns on foil).</li>
+                                <li>Focus on maintaining momentum and balance during transitional phases.</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold text-gray-900 mb-3">Debrief & Path to Advanced (10 minutes)</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-gray-600">
+                                <li>Review of progress on sustained flight and transitions.</li>
+                                <li>Personalized feedback and drills for continued practice.</li>
+                                <li>Discussion of common challenges in learning transitions and how to overcome them.</li>
+                                <li>Guidance on what to focus on next, potentially leading to our <a href="advanced-lesson.html" class="text-blue-600 hover:text-blue-800">Advanced Lesson</a>.</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Skills You'll Develop</h3>
+                        <ul class="grid md:grid-cols-2 gap-4 mb-8">
+                            {[
+                                "Longer, more controlled flights on the foil",
+                                "Consistent foil height control",
+                                "Improved upwind and downwind angles while foiling",
+                                "Basic carving turns on and off the foil",
+                                "Introduction to foiling tacks (upwind turns)",
+                                "Introduction to foiling jibes (downwind turns)",
+                                "Enhanced balance and board control at speed",
+                                "Better understanding of wing power management during maneuvers"
+                            ].map(skill => `
+                            <li class="flex items-start bg-gray-50 p-4 rounded-lg">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-gray-700">${skill}</span>
+                            </li>
+                            `).join('')}
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Prerequisites</h3>
+                        <p class="text-gray-600 mb-8">
+                           To benefit most from the Intermediate Lesson, you should have completed our Beginner Lesson or have equivalent experience, and be able to:
+                        </p>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                             <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Consistently get up on the foil and achieve short to medium length rides.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Perform basic water starts with good wing and board control.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Maintain basic directional control while on foil.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Be comfortable recovering your board and wing after falls in deeper water.</span>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">What's Included</h3>
+                        <ul class="space-y-3 text-gray-600 mb-8">
+                             <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>All necessary equipment, potentially including slightly more advanced gear suited for intermediate progression (wing, board, foil, leash, helmet).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Wetsuit and personal flotation device (PFD) / Impact Vest.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Professional instruction with experienced coach focusing on intermediate skills and transitions.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                <span>Personalized feedback and video analysis (if conditions/time permit).</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-gray-50 p-8 rounded-xl mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Unlock Fluid Riding</h3>
+                            <p class="text-gray-600 mb-4">
+                                The Intermediate Lesson is where your wingfoiling truly starts to flow. Mastering sustained flights and basic transitions opens up the ability to explore more of Toronto's waters, link turns, and ride with greater confidence and style. This stage is incredibly rewarding as you begin to feel more connected with your gear and the elements.
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-8 rounded-xl mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Ready for Advanced Techniques?</h3>
+                            <p class="text-gray-600 mb-4">
+                                Once you're comfortable with sustained foiling and are making progress on basic transitions, you might be ready to explore more advanced maneuvers. Our <a href="advanced-lesson.html" class="text-blue-600 hover:text-blue-800">Advanced Lesson</a> focuses on mastering foiling tacks and jibes, toeside riding, jumps, and more.
+                            </p>
+                            <a href="advanced-lesson.html" class="text-blue-600 font-medium hover:text-blue-800 inline-flex items-center">
+                                Learn about the Advanced Lesson
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="bg-blue-600 text-white p-8 rounded-xl">
+                            <h3 class="text-2xl font-bold mb-4">Ready to Refine Your Foiling?</h3>
+                            <p class="mb-6 opacity-90">
+                                Take your wingfoiling to the next level. Book your Intermediate Lesson today and start mastering longer flights and smooth transitions on Lake Ontario!
+                            </p>
+                           <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="contact.html" class="bg-white text-blue-600 hover:bg-blue-50 px-6 py-2 rounded-lg font-medium inline-block text-center">Book Intermediate Lesson</a>
+                                <a href="pricing.html" class="bg-transparent border border-white hover:bg-white hover:text-blue-600 px-6 py-2 rounded-lg font-medium inline-block text-center">View All Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TorontoWingfoil</div>
+                    <p class="text-gray-400">Experience the thrill of wingfoiling in Toronto with professional instruction and a structured learning approach.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="lessons.html" class="text-gray-400 hover:text-white">Lessons</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="gear.html" class="text-gray-400 hover:text-white">Gear Information</a></li>
+                        <li><a href="locations.html" class="text-gray-400 hover:text-white">Locations</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="safety.html" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="community.html" class="text-gray-400 hover:text-white">Community</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Toronto, Ontario</li>
+                        <li>Email: info@torontowingfoil.com</li>
+                        <li>Phone: (647) 555-1234</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TorontoWingfoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

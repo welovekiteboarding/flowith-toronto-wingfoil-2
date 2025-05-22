@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingfoiling Lesson Pricing | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-500 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="community.html" class="text-gray-500 hover:text-blue-600 font-medium">Community</a>
+                    <a href="events.html" class="text-gray-500 hover:text-blue-600 font-medium">Events</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+                
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Lessons</a>
+                    <a href="community.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Community</a>
+                    <a href="events.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Events</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 sm:py-32">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Pricing</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Clear and transparent pricing for wingfoiling lessons in Toronto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Introduction -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Pricing Structure</h2>
+                        <p class="text-gray-600 mb-8">
+                            At TorontoWingfoil, we believe in transparent pricing with no hidden fees. All of our lessons include all necessary equipment (wing, board, foil, wetsuit, life jacket, helmet) and professional instruction.
+                        </p>
+                        
+                        <p class="text-gray-600 mb-8">
+                            Our pricing is structured based on your skill level and lesson type. Most students progress through our structured program, starting with a Discovery Lesson and advancing through Beginner and Intermediate stages.
+                        </p>
+
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-12">
+                            <h3 class="text-xl font-semibold mb-4 text-gray-900">All-Inclusive Pricing</h3>
+                            <p class="text-gray-600">
+                                The prices listed below include all necessary equipment, professional instruction, and safety gear. There are no additional rental fees or hidden costs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Tables -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Lesson Pricing</h2>
+
+                    <!-- Individual Lessons -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 mb-12">
+                        <div class="px-6 py-4 bg-blue-600 text-white">
+                            <h3 class="text-xl font-bold">Individual Lessons</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 mb-8">
+                                Our standard lesson format is a 2-hour session with professional instruction and all equipment provided. Choose the level that matches your current experience.
+                            </p>
+                            
+                            <div class="space-y-6">
+                                <!-- Discovery Lesson -->
+                                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                    <div class="flex flex-col md:flex-row">
+                                        <div class="p-6 md:flex-1">
+                                            <h4 class="text-lg font-semibold text-gray-900">Discovery Lesson</h4>
+                                            <p class="text-gray-600 mt-2 mb-4">For first-time wingfoilers with no prior experience</p>
+                                            <ul class="space-y-2 text-gray-600 mb-4">
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>2-hour lesson</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>All equipment included</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>No prerequisites</span>
+                                                </li>
+                                            </ul>
+                                            <a href="discovery-lesson.html" class="text-blue-600 font-medium hover:text-blue-800">View lesson details →</a>
+                                        </div>
+                                        <div class="bg-gray-50 p-6 flex flex-col justify-center items-center">
+                                            <div class="text-3xl font-bold text-gray-900">$150</div>
+                                            <div class="text-gray-500">per person</div>
+                                            <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Beginner Lesson -->
+                                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                    <div class="flex flex-col md:flex-row">
+                                        <div class="p-6 md:flex-1">
+                                            <h4 class="text-lg font-semibold text-gray-900">Beginner Lesson</h4>
+                                            <p class="text-gray-600 mt-2 mb-4">For those who have completed a Discovery Lesson</p>
+                                            <ul class="space-y-2 text-gray-600 mb-4">
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>2-hour lesson</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>All equipment included</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Focus on first flights on the foil</span>
+                                                </li>
+                                            </ul>
+                                            <a href="beginner-lesson.html" class="text-blue-600 font-medium hover:text-blue-800">View lesson details →</a>
+                                        </div>
+                                        <div class="bg-gray-50 p-6 flex flex-col justify-center items-center">
+                                            <div class="text-3xl font-bold text-gray-900">$150</div>
+                                            <div class="text-gray-500">per person</div>
+                                            <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Intermediate Lesson -->
+                                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                    <div class="flex flex-col md:flex-row">
+                                        <div class="p-6 md:flex-1">
+                                            <h4 class="text-lg font-semibold text-gray-900">Intermediate Lesson</h4>
+                                            <p class="text-gray-600 mt-2 mb-4">For those who have experienced foiling and want to improve</p>
+                                            <ul class="space-y-2 text-gray-600 mb-4">
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>2-hour lesson</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>All equipment included</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Advanced skills and transitions</span>
+                                                </li>
+                                            </ul>
+                                            <a href="intermediate-lesson.html" class="text-blue-600 font-medium hover:text-blue-800">View lesson details →</a>
+                                        </div>
+                                        <div class="bg-gray-50 p-6 flex flex-col justify-center items-center">
+                                            <div class="text-3xl font-bold text-gray-900">$150</div>
+                                            <div class="text-gray-500">per person</div>
+                                            <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Package Deals -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 mb-12">
+                        <div class="px-6 py-4 bg-blue-600 text-white">
+                            <h3 class="text-xl font-bold">Lesson Packages</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 mb-8">
+                                Save by purchasing multiple lessons up front with our discounted packages. These are ideal for those committed to learning wingfoiling and progressing through the levels.
+                            </p>
+                            
+                            <div class="space-y-6">
+                                <!-- 3-Lesson Package -->
+                                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                    <div class="flex flex-col md:flex-row">
+                                        <div class="p-6 md:flex-1">
+                                            <h4 class="text-lg font-semibold text-gray-900">3-Lesson Package</h4>
+                                            <p class="text-gray-600 mt-2 mb-4">Perfect for beginners wanting to progress to foiling</p>
+                                            <ul class="space-y-2 text-gray-600 mb-4">
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Three 2-hour lessons (6 hours total)</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>All equipment included</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Save $50 compared to individual lessons</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Valid for 3 months from purchase</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-gray-50 p-6 flex flex-col justify-center items-center">
+                                            <div class="text-3xl font-bold text-gray-900">$400</div>
+                                            <div class="text-gray-500">per person</div>
+                                            <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 5-Lesson Package -->
+                                <div class="border-2 border-blue-200 rounded-lg overflow-hidden relative">
+                                    <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 text-sm font-semibold">Best Value</div>
+                                    <div class="flex flex-col md:flex-row">
+                                        <div class="p-6 md:flex-1">
+                                            <h4 class="text-lg font-semibold text-gray-900">5-Lesson Package</h4>
+                                            <p class="text-gray-600 mt-2 mb-4">The complete wingfoiling journey from beginner to independent rider</p>
+                                            <ul class="space-y-2 text-gray-600 mb-4">
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Five 2-hour lessons (10 hours total)</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>All equipment included</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Save $125 compared to individual lessons</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <span>Valid for 6 months from purchase</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-blue-50 p-6 flex flex-col justify-center items-center">
+                                            <div class="text-3xl font-bold text-gray-900">$625</div>
+                                            <div class="text-gray-500">per person</div>
+                                            <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Private Lessons -->
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 mb-12">
+                        <div class="px-6 py-4 bg-blue-600 text-white">
+                            <h3 class="text-xl font-bold">Private Lessons</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-600 mb-8">
+                                For those who prefer one-on-one instruction or have specific learning goals, our private lessons offer personalized attention and customized learning plans.
+                            </p>
+                            
+                            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                                <div class="flex flex-col md:flex-row">
+                                    <div class="p-6 md:flex-1">
+                                        <h4 class="text-lg font-semibold text-gray-900">Private Instruction</h4>
+                                        <p class="text-gray-600 mt-2 mb-4">Personalized one-on-one wingfoiling instruction</p>
+                                        <ul class="space-y-2 text-gray-600 mb-4">
+                                            <li class="flex items-start">
+                                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <span>2-hour private lesson</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <span>All equipment included</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <span>Customized instruction at your level</span>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="h-5 w-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <span>Focus on your specific goals</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-gray-50 p-6 flex flex-col justify-center items-center">
+                                        <div class="text-3xl font-bold text-gray-900">$250</div>
+                                        <div class="text-gray-500">per session</div>
+                                        <a href="contact.html" class="mt-4 bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-lg font-medium">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment & Policies -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Booking & Payment Information</h2>
+
+                    <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 mb-12">
+                        <div class="p-8">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-6">Booking Process</h3>
+                            
+                            <ol class="space-y-6 mb-8">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-4">1</div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Contact Us</h4>
+                                        <p class="text-gray-600">Reach out via our contact form, email, or phone to inquire about availability for your desired date and lesson type.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-4">2</div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Confirmation</h4>
+                                        <p class="text-gray-600">We'll confirm availability and provide you with payment instructions to secure your booking.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 font-semibold mr-4">3</div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900 mb-1">Payment</h4>
+                                        <p class="text-gray-600">A 50% deposit is required to secure your booking, with the remaining balance due on the day of your lesson.</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 flex items-center justify-center w-8

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wingfoiling Locations in Toronto | TorontoWingfoil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white min-h-screen">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">TorontoWingfoil</a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-500 hover:text-blue-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 font-medium">About</a>
+                    <a href="lessons.html" class="text-gray-500 hover:text-blue-600 font-medium">Lessons</a>
+                    <a href="gear.html" class="text-gray-500 hover:text-blue-600 font-medium">Gear</a>
+                    <a href="locations.html" class="text-gray-900 hover:text-blue-600 font-medium">Locations</a>
+                    <a href="safety.html" class="text-gray-500 hover:text-blue-600 font-medium">Safety</a>
+                    <a href="pricing.html" class="text-gray-500 hover:text-blue-600 font-medium">Pricing</a>
+                    <a href="contact.html" class="text-gray-500 hover:text-blue-600 font-medium">Contact</a>
+                </nav>
+
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                    <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">About</a>
+                    <a href="lessons.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Lessons</a>
+                    <a href="gear.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Gear</a>
+                    <a href="locations.html" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600">Locations</a>
+                    <a href="safety.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Safety</a>
+                    <a href="pricing.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Pricing</a>
+                    <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-500 hover:text-blue-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="relative bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20 sm:py-32">
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">Toronto Wingfoiling Locations</h1>
+                    <p class="text-lg sm:text-xl opacity-90">Discover the best spots for wingfoiling on Lake Ontario and learn local tips for a great session.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Introduction & General Tips -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl">
+                    <div class="prose prose-lg max-w-none">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Prime Spots for Wingfoiling in Toronto</h2>
+                        <p class="text-gray-600 mb-4">
+                            Toronto's waterfront on Lake Ontario offers several fantastic locations for wingfoiling, suitable for various skill levels and wind directions. We choose our lesson locations daily based on the prevailing conditions to ensure the safest and most productive learning environment.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            Remember, conditions on Lake Ontario can change. Always check the forecast, be aware of your surroundings, and prioritize <a href="safety.html" class="text-blue-600 hover:text-blue-800">safety</a>.
+                        </p>
+
+                        <div class="bg-blue-50 p-8 rounded-xl border border-blue-100 mb-12">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">General Toronto Wingfoiling Tips</h3>
+                            <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                                <li><strong>Best Season:</strong> The primary wingfoiling season in Toronto typically runs from late spring (May) through early fall (October). This is when air and water temperatures are most comfortable.</li>
+                                <li><strong>Water Temperature:</strong> Lake Ontario can be cool, especially in the shoulder seasons (spring/fall). A good quality <a href="gear.html#wetsuits" class="text-blue-600 hover:text-blue-800">wetsuit</a> is essential. Summer water temperatures are generally pleasant.</li>
+                                <li><strong>Wind Conditions:</strong> Ideal learning winds are steady, between 10-18 knots. Toronto gets a mix of wind directions, making different spots work on different days. Always check reliable local forecasts before heading out.</li>
+                                <li><strong>Water Surface:</strong> Conditions can range from flat water (often with offshore winds or in protected bays) to chop (common with onshore or stronger winds). Learning to handle small chop is part of progressing in Toronto.</li>
+                                <li><strong>Safety First:</strong> Always wear a PFD/impact vest and helmet. Use board and wing leashes. Be aware of other water users (swimmers, boaters, paddlers). Never go out in conditions beyond your ability. Our <a href="safety.html" class="text-blue-600 hover:text-blue-800">Safety Page</a> has more detailed guidelines.</li>
+                                <li><strong>Respect the Environment:</strong> Keep our beaches clean. Pack out everything you pack in. Be mindful of local wildlife.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specific Locations -->
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Key Lesson Locations</h2>
+                    
+                    <div class="space-y-12">
+                        <!-- Cherry Beach -->
+                        <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Cherry Beach</h3>
+                            <img src="https://images.unsplash.com/photo-1608319913998-30999979117c?q=80&w=1200&auto=format&fit=crop" alt="Wingfoiling at Cherry Beach" class="rounded-lg mb-6 w-full h-64 object-cover">
+                            <p class="text-gray-600 mb-4">
+                                Cherry Beach is a popular spot for many watersports, including wingfoiling. It's known for its relatively easy access and ability to handle various wind directions.
+                            </p>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Best For:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600 mb-4">
+                                <li>Beginners to advanced riders.</li>
+                                <li>Various wind directions, particularly SW, W, NW. Easterly winds can also work.</li>
+                                <li>Often has flatter water sections closer to shore, especially in certain wind conditions, making it good for learning.</li>
+                            </ul>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Local Tips:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>The western end can offer some protection and shallower areas ideal for Discovery and Beginner lessons.</li>
+                                <li>Can get busy, especially on summer weekends. Be mindful of swimmers and other water users.</li>
+                                <li>Parking can be limited during peak times.</li>
+                                <li>Water quality can vary; check local advisories.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Woodbine Beach -->
+                        <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Woodbine Beach</h3>
+                             <img src="https://images.unsplash.com/photo-1589694862453-929180110abc?q=80&w=1200&auto=format&fit=crop" alt="Wingfoiling at Woodbine Beach" class="rounded-lg mb-6 w-full h-64 object-cover">
+                            <p class="text-gray-600 mb-4">
+                                Woodbine Beach is one of Toronto's largest sandy beaches, offering ample space for setting up and launching. Its wide expanse makes it suitable for certain wind directions.
+                            </p>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Best For:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600 mb-4">
+                                <li>Beginners to intermediate riders.</li>
+                                <li>Easterly and Westerly winds. Southerly winds can create onshore chop.</li>
+                                <li>Large sandy area is forgiving for launching and landing.</li>
+                            </ul>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Local Tips:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>The long stretch of beach means you can often find a less crowded spot.</li>
+                                <li>Can have shore break in stronger onshore winds.</li>
+                                <li>Popular for swimming and volleyball; maintain safe distance from other beachgoers.</li>
+                                <li>Shallow areas extend out quite far in some sections, good for learning to stand and initial rides.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Humber Bay Park West -->
+                        <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                            <h3 class="text-2xl font-semibold text-blue-700 mb-4">Humber Bay Park West</h3>
+                            <img src="https://images.unsplash.com/photo-1629020460999-568883c536a1?q=80&w=1200&auto=format&fit=crop" alt="Wingfoiling at Humber Bay Park West" class="rounded-lg mb-6 w-full h-64 object-cover">
+                            <p class="text-gray-600 mb-4">
+                                Located in Etobicoke, Humber Bay Park West offers scenic views of the city skyline and can provide good conditions, especially with southerly or westerly winds.
+                            </p>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Best For:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600 mb-4">
+                                <li>Intermediate to advanced riders, though some protected areas can suit beginners.</li>
+                                <li>Southerly and Westerly winds. Can offer nice long runs.</li>
+                                <li>Often less crowded than central beaches.</li>
+                            </ul>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Local Tips:</h4>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Launching can be from pebble beaches or small sandy coves. Be mindful of rocks.</li>
+                                <li>The bay can offer flatter water in certain wind directions.</li>
+                                <li>Popular for sailing and paddling; be aware of boat traffic from nearby marinas.</li>
+                                <li>Offers beautiful views back towards the Toronto skyline, making for a picturesque session.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choosing Location Reminder -->
+        <section class="py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-blue-50 p-8 rounded-xl border border-blue-100">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Lesson Location Confirmation</h2>
+                        <p class="text-gray-600 text-center mb-6">
+                            The specific location for your lesson will be confirmed by your instructor based on the wind forecast and conditions for the day. This ensures you have the best possible learning experience. We prioritize your safety and progress!
+                        </p>
+                        <div class="text-center">
+                            <a href="contact.html" class="bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-lg font-medium text-lg inline-block">Book Your Lesson</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">TorontoWingfoil</div>
+                    <p class="text-gray-400">Experience the thrill of wingfoiling in Toronto with professional instruction and a structured learning approach.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="lessons.html" class="text-gray-400 hover:text-white">Lessons</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-white">Pricing</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="gear.html" class="text-gray-400 hover:text-white">Gear Information</a></li>
+                        <li><a href="locations.html" class="text-gray-400 hover:text-white">Locations</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="safety.html" class="text-gray-400 hover:text-white">Safety</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Toronto, Ontario</li>
+                        <li>Email: info@torontowingfoil.com</li>
+                        <li>Phone: (647) 555-1234</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TorontoWingfoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
